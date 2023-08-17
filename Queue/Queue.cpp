@@ -54,7 +54,7 @@ public:
 
     void push(T value)
     {
-        if (size-1 == capacity)
+        if (size == capacity)
             resize();
         arr[size] = value;
         size++;
@@ -90,7 +90,7 @@ public:
 int main()
 {
     Queue<int> q;
-    for (int i = 1; i < 10; i++)
+    for (int i = 1; i < 15; i++)
     {
         q.push(i);
     }
